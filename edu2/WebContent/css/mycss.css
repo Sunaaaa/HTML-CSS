@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body{
+	border : 1px white solid;
+}
+#header {
+	background-color: brown;
+	color : white;
+	text-align: center;
+	width : 100%;
+	height : 100px;
+	font-weight: bold;
+	padding-top : 20px;
+}
+
+#menu{
+	width : 25%;
+	height : 200px;
+	background-color: brown;
+	border : 1px white solid;
+	float : left;
+	text-align: center;
+	margin : 0 auto;
+}
+#menu > ul{
+	font-size : 20px;
+	list-style: none;
+}
+#menu  a{
+	text-decoration: none;
+	color : white;
+}
+#menu li {
+	padding : 10px;
+}
+#menu a:hover{
+	color : black;
+}
+
+#content{
+	text-align: center;
+	background-color: white;
+	border : 1px brown dotted;
+	float : right;
+	height : 500px;
+	width : 74%;
+	margin : 1px auto;
+}
+#footer{
+	align-content : center;
+	height : 30px;
+	background-color: brown;
+	color : yellow;
+	text-align: right;
+	clear : both;
+}
+#footer > p {
+	margin-right: 20px;
+}

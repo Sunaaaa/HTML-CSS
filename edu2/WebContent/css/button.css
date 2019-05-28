@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+a.btn{
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid purple;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px pink;	
+	margin: 0 auto;
+	text-decoration: none;
+	font-size: 150%;
+	font-weight: bold;
+	background-color: gray;
+	}
+
+a.btn:hover {
+	color  : lime;
+	box-shadow: 10px 10px 10px lime;	
+	}
+	
+	

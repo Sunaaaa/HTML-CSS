@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+nav ul{
+	list-style: none;
+	background-color: gray;	
+}
+nav ul li a{
+	background-color: gray;	
+	color : white;
+	text-decoration: none;
+}
+li a:hover{
+	text-decoration: underline;
+}

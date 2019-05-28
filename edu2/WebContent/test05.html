@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>title</title>
+<style>
+.menu1 {
+	
+}
+
+.menu1  li {
+	list-style: none;
+	display: inline;
+	padding: 0.5em;
+	margin: 0;
+}
+
+.menu1  li:first-child {
+	border-radius: 15px 0 0 15px;
+}
+
+.menu1  li:last-child {
+	border-radius: 0 15px 15px 0;
+}
+
+.menu1  li:nth-child(2n) {
+	background-color: yellow;
+}
+
+.menu1  li:nth-child(2n+1) {
+	background-color: brown;
+}
+.menu1 a{
+	text-decoration: none; 
+}
+#a:hover {
+	text-align: center;
+}/*a태그는 인라인 이므로 가운데 정렬이 적용되지 않음 */
+</style>
+</head>
+<body>
+	<a id="a" href="#">link</a>
+	<ul class="menu1">
+		<li>메뉴 1</li>
+		<li>메뉴 2</li>
+		<li>메뉴 3</li>
+		<li>메뉴 4</li>
+		<li>메뉴 5</li>
+		<li>메뉴 6</li>
+	</ul>
+	<br><br><br><br>
+	<ul>
+		<li>메뉴 1</li>
+		<li>메뉴 2</li>
+		<li>메뉴 3</li>
+		<li>메뉴 4</li>
+		<li>메뉴 5</li>
+		<li>메뉴 6</li>
+	</ul>
+	<br><br><br><br>
+	<ul class="menu1">
+		<li><a href="#">메뉴 1</a></li>
+		<li><a href="#">메뉴 2</a></li>
+		<li><a href="#">메뉴 3</a></li>
+		<li><a href="#">메뉴 4</a></li>
+		<li><a href="#">메뉴 5</a></li>
+		<li><a href="#">메뉴 6</a></li>
+		<li><a href="#">메뉴 7</a></li>
+		<li><a href="#">메뉴 8</a></li>
+		<li><a href="#">메뉴 9</a></li>
+	</ul>
+
+</body>
+</html>
