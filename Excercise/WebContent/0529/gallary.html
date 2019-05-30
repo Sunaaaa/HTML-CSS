@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>title</title>
+<style type="text/css">
+	*{
+		margin : 0 auto;
+		text-align: center;
+	}
+	h3{
+		margin: 20px;
+	}
+	div{
+		width: 500px;
+		width: 400px;
+	}
+	#outer{
+		border: 1px solid gray;
+	}
+	#l{
+		float : left ;
+		position: relative;
+		top : -140px;
+		cursor: pointer;		
+	}
+	#l:hover{
+		color :  lime;
+	}
+	#r{
+		position: relative;
+		float : right;
+		top : -140px;
+		cursor: pointer;		
+	}
+	#r:hover{
+		color :  aqua;
+	}
+	img{
+		width: 100%;
+		position: relative;
+		height: 100%;
+	}
+</style>
+<script type="text/javascript">
+$(function() {
+
+	var index=1;
+	$('#l').click(function() {
+		index-=1;
+		if(index<=0)alert('첫장입니다.');
+		else {
+			$('img').attr('src','./img/g'+index+'.png');	
+			$('img').attr('alt','g'+index+'.png');	
+		}
+		
+	});
+	$('#r').click(function() {
+		index+=1;
+		if(index>5)alert('마지막장입니다.');
+		else {
+			$('img').attr('src','./img/g'+index+'.png');	
+			$('img').attr('alt','g'+index+'.png');	
+		}				
+	});
+});
+</script>
+
+</head>
+<body>
+	<h3>Manual Slides</h3>
+	<div id="outer">
+		<div id="inner"><img src="./img/g2.png" alt="g1.png"/></div>
+		<a id="l">&larr;</a>
+		<a id="r">&rarr;</a>
+	</div>
+</body>
+</html>
